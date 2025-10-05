@@ -1,0 +1,39 @@
+{
+  "episode": 0,
+  "episode_rewards": [
+    11.921775817871094
+  ],
+  "episode_lengths": [
+    11
+  ],
+  "group_performances": [
+    [
+      0.0,
+      1.192177653312683,
+      0.0,
+      0.0
+    ]
+  ],
+  "config": {
+    "env_name": "CartPole-v1",
+    "max_episode_length": 500,
+    "group_size": 8,
+    "num_groups": 4,
+    "group_update_frequency": 10,
+    "learning_rate": 0.0003,
+    "gamma": 0.99,
+    "lambda_gae": 0.95,
+    "clip_ratio": 0.2,
+    "value_loss_coef": 0.5,
+    "entropy_coef": 0.01,
+    "num_episodes": 50,
+    "batch_size": 64,
+    "num_epochs": 4,
+    "noise_std": 0.1,
+    "transition_noise": 0.05,
+    "reward_noise": 0.02,
+    "log_interval": 50,
+    "save_interval": 100,
+    "log_dir": "logs"
+  }
+}

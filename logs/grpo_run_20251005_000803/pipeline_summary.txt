@@ -1,0 +1,18 @@
+GRPO PIPELINE SUMMARY
+==================================================
+
+TRAINING RESULTS:
+  Total episodes: 500
+  Final average reward: 32.20
+  Best episode reward: 128.91
+  Final group performances: [ 0.          0.         35.56270258  0.        ]
+
+EVALUATION RESULTS:
+  low uncertainty: 41.38 ± 28.78
+  medium uncertainty: 40.25 ± 24.69
+  high uncertainty: 35.79 ± 23.95
+
+CONCLUSIONS:
+  - GRPO successfully trained on uncertain environments
+  - Multiple groups provide robustness and diversity
+  - Algorithm adapts to different uncertainty levels

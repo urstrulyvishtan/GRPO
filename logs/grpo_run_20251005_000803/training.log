@@ -1,0 +1,36 @@
+2025-10-05 00:08:03,715 - trainer - INFO - Initialized GRPO trainer with 4 groups
+2025-10-05 00:08:03,715 - trainer - INFO - Starting GRPO training...
+2025-10-05 00:08:03,885 - trainer - INFO - Episode 0: Avg Reward: 22.92 ± 0.00, Avg Length: 21.00
+2025-10-05 00:08:03,885 - trainer - INFO - Group Performances: [0.        0.        2.2918241 0.       ]
+2025-10-05 00:08:03,885 - trainer - INFO - Uncertainty Stats: {'dynamics_changes': 0, 'delayed_rewards_count': 0, 'current_gravity': 9.8, 'current_pole_length': 0.5, 'episode_step': 21}
+2025-10-05 00:08:05,161 - trainer - INFO - Episode 50: Avg Reward: 26.65 ± 16.85, Avg Length: 24.58
+2025-10-05 00:08:05,161 - trainer - INFO - Group Performances: [ 0.          0.         21.79939574  0.        ]
+2025-10-05 00:08:05,161 - trainer - INFO - Uncertainty Stats: {'dynamics_changes': 0, 'delayed_rewards_count': 0, 'current_gravity': 9.8, 'current_pole_length': 0.5, 'episode_step': 11}
+2025-10-05 00:08:05,575 - trainer - INFO - Episode 100: Avg Reward: 25.93 ± 13.79, Avg Length: 24.00
+2025-10-05 00:08:05,575 - trainer - INFO - Group Performances: [ 0.          0.         30.95218412  0.        ]
+2025-10-05 00:08:05,575 - trainer - INFO - Uncertainty Stats: {'dynamics_changes': 0, 'delayed_rewards_count': 0, 'current_gravity': 9.8, 'current_pole_length': 0.5, 'episode_step': 43}
+2025-10-05 00:08:06,437 - trainer - INFO - Episode 150: Avg Reward: 26.20 ± 15.49, Avg Length: 24.14
+2025-10-05 00:08:06,437 - trainer - INFO - Group Performances: [ 0.          0.         26.45053481  0.        ]
+2025-10-05 00:08:06,437 - trainer - INFO - Uncertainty Stats: {'dynamics_changes': 1, 'delayed_rewards_count': 0, 'current_gravity': 9.731163269768254, 'current_pole_length': 0.5065275294359795, 'episode_step': 37}
+2025-10-05 00:08:06,917 - trainer - INFO - Episode 200: Avg Reward: 32.55 ± 20.74, Avg Length: 29.90
+2025-10-05 00:08:06,917 - trainer - INFO - Group Performances: [ 0.         0.        39.9237489  0.       ]
+2025-10-05 00:08:06,917 - trainer - INFO - Uncertainty Stats: {'dynamics_changes': 3, 'delayed_rewards_count': 1, 'current_gravity': 9.776299114478002, 'current_pole_length': 0.4733166857484686, 'episode_step': 57}
+2025-10-05 00:08:07,787 - trainer - INFO - Episode 250: Avg Reward: 25.39 ± 13.30, Avg Length: 23.38
+2025-10-05 00:08:07,787 - trainer - INFO - Group Performances: [ 0.          0.         26.44753162  0.        ]
+2025-10-05 00:08:07,787 - trainer - INFO - Uncertainty Stats: {'dynamics_changes': 3, 'delayed_rewards_count': 0, 'current_gravity': 9.776299114478002, 'current_pole_length': 0.4733166857484686, 'episode_step': 29}
+2025-10-05 00:08:08,230 - trainer - INFO - Episode 300: Avg Reward: 28.68 ± 14.59, Avg Length: 26.54
+2025-10-05 00:08:08,230 - trainer - INFO - Group Performances: [ 0.          0.         25.11399398  0.        ]
+2025-10-05 00:08:08,230 - trainer - INFO - Uncertainty Stats: {'dynamics_changes': 3, 'delayed_rewards_count': 0, 'current_gravity': 9.776299114478002, 'current_pole_length': 0.4733166857484686, 'episode_step': 12}
+2025-10-05 00:08:09,168 - trainer - INFO - Episode 350: Avg Reward: 31.11 ± 19.57, Avg Length: 28.72
+2025-10-05 00:08:09,168 - trainer - INFO - Group Performances: [ 0.          0.         33.41693267  0.        ]
+2025-10-05 00:08:09,168 - trainer - INFO - Uncertainty Stats: {'dynamics_changes': 3, 'delayed_rewards_count': 0, 'current_gravity': 9.776299114478002, 'current_pole_length': 0.4733166857484686, 'episode_step': 76}
+2025-10-05 00:08:09,673 - trainer - INFO - Episode 400: Avg Reward: 35.12 ± 22.85, Avg Length: 32.42
+2025-10-05 00:08:09,673 - trainer - INFO - Group Performances: [ 0.          0.         37.98912272  0.        ]
+2025-10-05 00:08:09,673 - trainer - INFO - Uncertainty Stats: {'dynamics_changes': 3, 'delayed_rewards_count': 0, 'current_gravity': 9.776299114478002, 'current_pole_length': 0.4733166857484686, 'episode_step': 19}
+2025-10-05 00:08:10,643 - trainer - INFO - Episode 450: Avg Reward: 35.58 ± 19.81, Avg Length: 32.78
+2025-10-05 00:08:10,643 - trainer - INFO - Group Performances: [ 0.          0.         36.14372974  0.        ]
+2025-10-05 00:08:10,643 - trainer - INFO - Uncertainty Stats: {'dynamics_changes': 4, 'delayed_rewards_count': 0, 'current_gravity': 9.732239186257923, 'current_pole_length': 0.4582203214554616, 'episode_step': 19}
+2025-10-05 00:08:11,154 - trainer - INFO - Training completed!
+2025-10-05 00:08:11,154 - trainer - INFO - Finalizing training...
+2025-10-05 00:08:12,227 - trainer - INFO - Training summary created
+2025-10-05 00:08:12,227 - trainer - INFO - Training finalized. Results saved to logs/grpo_run_20251005_000803

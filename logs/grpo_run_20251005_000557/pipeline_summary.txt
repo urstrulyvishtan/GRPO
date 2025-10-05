@@ -1,0 +1,5 @@
+GRPO PIPELINE SUMMARY
+==================================================
+
+TRAINING RESULTS:
+  Total episodes: 50

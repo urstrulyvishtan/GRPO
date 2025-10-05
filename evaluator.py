@@ -25,6 +25,23 @@ import gymnasium as gym
 
 logger = logging.getLogger(__name__)
 
+def convert_numpy_to_python_types(obj):
+    """Recursively converts numpy types to standard Python types for JSON serialization."""
+    if isinstance(obj, np.float32) or isinstance(obj, np.float64):
+        return float(obj)
+    elif isinstance(obj, np.int32) or isinstance(obj, np.int64):
+        return int(obj)
+    elif isinstance(obj, np.bool_):
+        return bool(obj)
+    elif isinstance(obj, np.ndarray):
+        return obj.tolist()
+    elif isinstance(obj, dict):
+        return {k: convert_numpy_to_python_types(v) for k, v in obj.items()}
+    elif isinstance(obj, list):
+        return [convert_numpy_to_python_types(elem) for elem in obj]
+    else:
+        return obj
+
 class GRPOEvaluator:
     """
     Comprehensive evaluator for GRPO algorithm.
@@ -590,7 +607,9 @@ class GRPOEvaluator:
         # Save raw results
         results_path = os.path.join(self.results_dir, 'evaluation_results.json')
         with open(results_path, 'w') as f:
-            json.dump(self.evaluation_results, f, indent=2)
+            # Convert numpy types to standard Python types for JSON serialization
+            serializable_results = convert_numpy_to_python_types(self.evaluation_results)
+            json.dump(serializable_results, f, indent=2)
         
         # Create summary report
         self._create_summary_report()
@@ -640,7 +659,9 @@ class GRPOEvaluator:
         # Save report
         report_path = os.path.join(self.results_dir, 'evaluation_summary.json')
         with open(report_path, 'w') as f:
-            json.dump(report, f, indent=2)
+            # Convert numpy types to standard Python types for JSON serialization
+            serializable_report = convert_numpy_to_python_types(report)
+            json.dump(serializable_report, f, indent=2)
         
         logger.info(f"Evaluation summary saved to {report_path}")
 

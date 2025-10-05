@@ -1,0 +1,12 @@
+2025-10-05 00:05:07,337 - trainer - INFO - Initialized GRPO trainer with 4 groups
+2025-10-05 00:05:07,338 - trainer - INFO - Starting GRPO training...
+2025-10-05 00:05:07,489 - trainer - INFO - Episode 0: Avg Reward: 10.82 ± 0.00, Avg Length: 10.00
+2025-10-05 00:05:07,490 - trainer - INFO - Group Performances: [0.        0.        1.0817765 0.       ]
+2025-10-05 00:05:07,490 - trainer - INFO - Uncertainty Stats: {'dynamics_changes': 0, 'delayed_rewards_count': 0, 'current_gravity': 9.8, 'current_pole_length': 0.5, 'episode_step': 10}
+2025-10-05 00:05:09,585 - trainer - INFO - Episode 50: Avg Reward: 25.77 ± 13.76, Avg Length: 23.68
+2025-10-05 00:05:09,585 - trainer - INFO - Group Performances: [ 0.          0.         23.63164237  0.        ]
+2025-10-05 00:05:09,585 - trainer - INFO - Uncertainty Stats: {'dynamics_changes': 0, 'delayed_rewards_count': 0, 'current_gravity': 9.8, 'current_pole_length': 0.5, 'episode_step': 15}
+2025-10-05 00:05:10,068 - trainer - INFO - Training completed!
+2025-10-05 00:05:10,068 - trainer - INFO - Finalizing training...
+2025-10-05 00:05:11,108 - trainer - INFO - Training summary created
+2025-10-05 00:05:11,108 - trainer - INFO - Training finalized. Results saved to logs/grpo_run_20251005_000507

@@ -10,6 +10,7 @@ import argparse
 import logging
 import os
 import sys
+import numpy as np
 from pathlib import Path
 
 # Add the current directory to Python path
@@ -229,7 +230,7 @@ def create_pipeline_summary(trainer, evaluator):
         
         f.write("TRAINING RESULTS:\n")
         f.write(f"  Total episodes: {len(trainer.episode_rewards)}\n")
-        f.write(f"  Final average reward: {trainer.episode_rewards[-10:]:.2f}\n")
+        f.write(f"  Final average reward: {np.mean(trainer.episode_rewards[-10:]):.2f}\n")
         f.write(f"  Best episode reward: {max(trainer.episode_rewards):.2f}\n")
         f.write(f"  Final group performances: {trainer.agent.group_performances}\n\n")
         

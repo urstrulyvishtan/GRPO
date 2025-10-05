@@ -1,0 +1,108 @@
+{
+  "evaluation_timestamp": "2025-10-05T00:08:19.349782",
+  "config": {
+    "env_name": "CartPole-v1",
+    "max_episode_length": 500,
+    "group_size": 8,
+    "num_groups": 4,
+    "group_update_frequency": 10,
+    "learning_rate": 0.0003,
+    "gamma": 0.99,
+    "lambda_gae": 0.95,
+    "clip_ratio": 0.2,
+    "value_loss_coef": 0.5,
+    "entropy_coef": 0.01,
+    "num_episodes": 500,
+    "batch_size": 64,
+    "num_epochs": 4,
+    "noise_std": 0.1,
+    "transition_noise": 0.05,
+    "reward_noise": 0.02,
+    "log_interval": 50,
+    "save_interval": 100,
+    "log_dir": "logs"
+  },
+  "summary": {
+    "performance": {
+      "low": {
+        "mean_reward": 41.3754997253418,
+        "std_reward": 28.782339096069336,
+        "success_rate": 0.0
+      },
+      "medium": {
+        "mean_reward": 40.25442123413086,
+        "std_reward": 24.689680099487305,
+        "success_rate": 0.0
+      },
+      "high": {
+        "mean_reward": 35.791465759277344,
+        "std_reward": 23.95399284362793,
+        "success_rate": 0.0
+      }
+    },
+    "robustness": {
+      "observation_noise": {
+        "mean_reward": 37.784202575683594,
+        "std_reward": 29.88279914855957,
+        "success_rate": 0.02
+      },
+      "action_noise": {
+        "mean_reward": 40.20013427734375,
+        "std_reward": 26.982017517089844,
+        "success_rate": 0.0
+      },
+      "transition_noise": {
+        "mean_reward": 46.80876541137695,
+        "std_reward": 30.969135284423828,
+        "success_rate": 0.0
+      },
+      "reward_noise": {
+        "mean_reward": 42.4937744140625,
+        "std_reward": 28.289108276367188,
+        "success_rate": 0.0
+      },
+      "combined_perturbations": {
+        "mean_reward": 43.173030853271484,
+        "std_reward": 21.118179321289062,
+        "success_rate": 0.0
+      }
+    },
+    "group_diversity": {
+      "group_means": [
+        23.792131423950195,
+        25.326833724975586,
+        42.648231506347656,
+        23.931396484375
+      ],
+      "group_stds": [
+        10.992191314697266,
+        13.24791431427002,
+        24.433053970336914,
+        13.342350959777832
+      ],
+      "mean_difference": 7.946010112762451,
+      "coefficient_of_variation": 0.2747141420841217,
+      "group_performance_range": 18.85610008239746
+    },
+    "baseline_comparison": {
+      "medium": {
+        "grpo_mean": 42.863521575927734,
+        "single_policy_mean": 43.012454986572266,
+        "improvement": -0.14893341064453125,
+        "improvement_percent": -0.34625646471977234,
+        "t_statistic": -0.03947747808076372,
+        "p_value": 0.9685494858431223,
+        "significant": false
+      },
+      "high": {
+        "grpo_mean": 38.49739456176758,
+        "single_policy_mean": 36.01691818237305,
+        "improvement": 2.4804763793945312,
+        "improvement_percent": 6.886975288391113,
+        "t_statistic": 0.7660089598951767,
+        "p_value": 0.4445831925438639,
+        "significant": false
+      }
+    }
+  }
+}

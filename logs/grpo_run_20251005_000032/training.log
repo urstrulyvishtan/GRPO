@@ -1,0 +1,5 @@
+2025-10-05 00:00:32,608 - trainer - INFO - Initialized GRPO trainer with 4 groups
+2025-10-05 00:00:32,608 - trainer - INFO - Starting GRPO training...
+2025-10-05 00:00:32,749 - trainer - INFO - Episode 0: Avg Reward: 11.99 ± 0.00, Avg Length: 11.00
+2025-10-05 00:00:32,749 - trainer - INFO - Group Performances: [0.         0.         1.19919658 0.        ]
+2025-10-05 00:00:32,749 - trainer - INFO - Uncertainty Stats: {'dynamics_changes': 0, 'delayed_rewards_count': 0, 'current_gravity': 9.8, 'current_pole_length': 0.5, 'episode_step': 11}

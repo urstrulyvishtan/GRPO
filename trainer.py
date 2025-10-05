@@ -24,6 +24,23 @@ import gymnasium as gym
 
 logger = logging.getLogger(__name__)
 
+def convert_numpy_to_python_types(obj):
+    """Recursively converts numpy types to standard Python types for JSON serialization."""
+    if isinstance(obj, np.float32) or isinstance(obj, np.float64):
+        return float(obj)
+    elif isinstance(obj, np.int32) or isinstance(obj, np.int64):
+        return int(obj)
+    elif isinstance(obj, np.bool_):
+        return bool(obj)
+    elif isinstance(obj, np.ndarray):
+        return obj.tolist()
+    elif isinstance(obj, dict):
+        return {k: convert_numpy_to_python_types(v) for k, v in obj.items()}
+    elif isinstance(obj, list):
+        return [convert_numpy_to_python_types(elem) for elem in obj]
+    else:
+        return obj
+
 class GRPOTrainer:
     """
     Trainer class for GRPO algorithm.
@@ -329,10 +346,13 @@ class GRPOTrainer:
             'group_performances': self.group_performances_history,
             'config': self.config.__dict__
         }
-        
+
+        # Convert numpy types to standard Python types for JSON serialization
+        serializable_stats = convert_numpy_to_python_types(stats)
+
         stats_path = os.path.join(self.run_dir, f'training_stats_episode_{episode}.json')
         with open(stats_path, 'w') as f:
-            json.dump(stats, f, indent=2)
+            json.dump(serializable_stats, f, indent=2)
     
     def finalize_training(self):
         """Finalize training and create summary visualizations"""
@@ -442,9 +462,12 @@ class GRPOTrainer:
             }
         }
         
+        # Convert numpy types to standard Python types for JSON serialization
+        serializable_summary = convert_numpy_to_python_types(summary)
+
         summary_path = os.path.join(self.run_dir, 'training_summary.json')
         with open(summary_path, 'w') as f:
-            json.dump(summary, f, indent=2)
+            json.dump(serializable_summary, f, indent=2)
         
         logger.info("Training summary created")
 

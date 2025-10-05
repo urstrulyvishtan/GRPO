@@ -1,0 +1,108 @@
+{
+  "evaluation_timestamp": "2025-10-05T00:06:05.648620",
+  "config": {
+    "env_name": "CartPole-v1",
+    "max_episode_length": 500,
+    "group_size": 8,
+    "num_groups": 4,
+    "group_update_frequency": 10,
+    "learning_rate": 0.0003,
+    "gamma": 0.99,
+    "lambda_gae": 0.95,
+    "clip_ratio": 0.2,
+    "value_loss_coef": 0.5,
+    "entropy_coef": 0.01,
+    "num_episodes": 50,
+    "batch_size": 64,
+    "num_epochs": 4,
+    "noise_std": 0.1,
+    "transition_noise": 0.05,
+    "reward_noise": 0.02,
+    "log_interval": 50,
+    "save_interval": 100,
+    "log_dir": "logs"
+  },
+  "summary": {
+    "performance": {
+      "low": {
+        "mean_reward": 27.062461853027344,
+        "std_reward": 18.982311248779297,
+        "success_rate": 0.0
+      },
+      "medium": {
+        "mean_reward": 23.892221450805664,
+        "std_reward": 12.88507080078125,
+        "success_rate": 0.0
+      },
+      "high": {
+        "mean_reward": 21.973068237304688,
+        "std_reward": 10.61219596862793,
+        "success_rate": 0.0
+      }
+    },
+    "robustness": {
+      "observation_noise": {
+        "mean_reward": 26.319257736206055,
+        "std_reward": 16.81163787841797,
+        "success_rate": 0.0
+      },
+      "action_noise": {
+        "mean_reward": 23.351835250854492,
+        "std_reward": 14.44389820098877,
+        "success_rate": 0.0
+      },
+      "transition_noise": {
+        "mean_reward": 26.877199172973633,
+        "std_reward": 17.082725524902344,
+        "success_rate": 0.0
+      },
+      "reward_noise": {
+        "mean_reward": 24.310956954956055,
+        "std_reward": 13.14867115020752,
+        "success_rate": 0.0
+      },
+      "combined_perturbations": {
+        "mean_reward": 22.737049102783203,
+        "std_reward": 11.419955253601074,
+        "success_rate": 0.0
+      }
+    },
+    "group_diversity": {
+      "group_means": [
+        24.59615707397461,
+        23.508262634277344,
+        23.20578384399414,
+        22.69289779663086
+      ],
+      "group_stds": [
+        13.510720252990723,
+        12.746996879577637,
+        14.783159255981445,
+        11.321388244628906
+      ],
+      "mean_difference": 0.6963481903076172,
+      "coefficient_of_variation": 0.029630862176418304,
+      "group_performance_range": 1.90325927734375
+    },
+    "baseline_comparison": {
+      "medium": {
+        "grpo_mean": 24.244544982910156,
+        "single_policy_mean": 24.9056396484375,
+        "improvement": -0.6610946655273438,
+        "improvement_percent": -2.654397487640381,
+        "t_statistic": -0.34230058880205905,
+        "p_value": 0.7324877673073265,
+        "significant": false
+      },
+      "high": {
+        "grpo_mean": 23.61783218383789,
+        "single_policy_mean": 23.101125717163086,
+        "improvement": 0.5167064666748047,
+        "improvement_percent": 2.23671555519104,
+        "t_statistic": 0.32535603522664863,
+        "p_value": 0.7452551730012051,
+        "significant": false
+      }
+    }
+  }
+}
