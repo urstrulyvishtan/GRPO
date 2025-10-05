@@ -574,9 +574,9 @@ If you use this implementation in your research, please cite:
 ```bibtex
 @software{grpo_implementation,
   title={GRPO: Group Relative Policy Optimization Implementation},
-  author={Your Name},
+  author={Sibi Vishtan},
   year={2024},
-  url={https://github.com/yourusername/GRPO}
+  url={https://github.com/urstrulyvishtan/GRPO}
 }
 ```
 
@@ -586,7 +586,7 @@ For questions, issues, or contributions:
 
 - **Issues**: Use GitHub Issues for bug reports and feature requests
 - **Discussions**: Use GitHub Discussions for questions and ideas
-- **Email**: Contact [your-email@domain.com]
+- **Email**: Contact [sibivishtan@gmail.com]
 
 ---
 
